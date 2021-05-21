@@ -1,0 +1,147 @@
+html {
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    /* TODO: repeats when scroll bar added for calc */
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculator {
+    border: 3px solid black;
+    border-radius:5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "display    display display display"
+        "ac         del     perc    divi"
+        "num7       num8    num9    mult"
+        "num4       num5    num6    min"
+        "num1       num2    num3    plus"
+        "point      num0    res     res";
+    padding: 20px;
+    gap: 5px;
+    background-color: cyan;
+    
+}
+
+#display {
+    grid-area: display;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: yellow;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0.4em;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.button {
+    grid-area: button;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: coral;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+.button:hover {
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(255,255,255,.5) 3px, rgba(255,255,255,.5) 7px);
+}
+
+#ac {
+    grid-area: ac;
+}
+
+#del {
+    grid-area: del;
+}
+
+#perc {
+    grid-area: perc;
+}
+
+#divi {
+    grid-area: divi;
+}
+
+#mult {
+    grid-area: mult;
+}
+
+#min {
+    grid-area: min;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#paren {
+    grid-area: paren;
+}
+
+#res {
+    grid-area: res;
+}
+
+#point {
+    grid-area: point;
+}
+
+#num0 {
+    grid-area: num0;
+}
+
+#num1 {
+    grid-area: num1;
+}
+
+#num2 {
+    grid-area: num2;
+}
+
+#num3 {
+    grid-area: num3;
+}
+
+#num4 {
+    grid-area: num4;
+}
+
+#num5 {
+    grid-area: num5;
+}
+
+#num6 {
+    grid-area: num6;
+}
+
+#num7 {
+    grid-area: num7;
+}
+
+#num8 {
+    grid-area: num8;
+}
+
+#num9 {
+    grid-area: num9;
+}
+
